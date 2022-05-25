@@ -1,0 +1,48 @@
+.container{
+          padding-left: 50px;
+}
+
+.thead{
+          border: 5px solid black;
+          border-radius: 10px;
+}
+
+.head{
+          background-color: rgb(97, 94, 94);
+          color: white;
+          text-transform: uppercase;
+
+
+}
+
+.tbody{
+          background-color: rgb(97, 94, 94);
+          color: white;
+          text-transform: uppercase;
+}
+.h1{
+          border: 2px solid black;
+          word-spacing: 2px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          border-radius: 10px
+}
+.h1{
+          display: inline-block;
+          background-color: rgb(170, 173, 223);
+          padding: 8px;
+          text-align: center;
+}
+.container{
+          text-align: center;
+}
+
+
+.body-index{
+          color: chartreuse;
+}
+
+
+.office_emp_manage_heading{
+          text-align: center;
+}

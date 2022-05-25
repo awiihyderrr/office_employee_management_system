@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+          <link rel="stylesheet" href="{% static 'css/style.css' %}">
+          <title>Add Employee</title>
+</head>
+<body class="text-bg-secondary p-3">
+       
+                    <h1 class="office_emp_manage_heading border text-bg-dark p-3 rounded-5">ADD EMPLOYEE</h1>
+                    <hr>      
+                    <form action="/add_emp" method="post" class="text-bg-dark p-3">
+                              {% csrf_token %}
+                              <label for="first_name">First Name</label>
+                              <input type="text" id="fist_name" name="first_name" value="{{ first_name }}"> <br>
+                              <hr>
+                              <label for="flast_name">Last Name</label>
+                              <input type="text" id="last_name" name="last_name" value="{{ last_name}}"> <br>
+                              <hr>
+                              <label for="dept">Department</label>
+                              <input type="number" id="dept" name="dept" value="{{ dept }}"> <br>
+                              <hr>
+                              <label for="salary">Salary</label>
+                              <input type="number" id="salary" name="salary" value="{{ salary }}"> <br>
+                              <hr>
+                              <label for="bonus">Bonus</label>
+                              <input type="number" id="bonus" name="bonus" value="{{ bonus }}"> <br>
+                              <hr>
+                              <label for="role">Role</label>
+                              <input type="number" id="role" name="role" value="{{ role }}"> <br>
+                              <hr>
+                              <label for="phone">Phone Number</label>
+                              <input type="number" id="phone" name="phone" value="{{ phone }}"> <br>
+                              <hr>
+                              <button type="submit", class="btn btn-primary" >Submit</button>
+                    </form>
+      
+            
+                
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      
+
+</body>
+</html>
